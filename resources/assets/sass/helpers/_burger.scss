@@ -1,0 +1,154 @@
+@import 'mixins';
+
+body #burger + .burger-label {
+  position: fixed;
+  z-index: 5;
+	top: 20px;
+	bottom: 10px;
+	left: 20px;
+
+  width: 15px;
+  height: 20px;
+}
+body #burger + .burger-label span {
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+
+  display: block;
+
+  width: 100%;
+  height: 2px;
+  margin-top: -1px;
+
+  transition: .5s;
+
+  background: $text-color;
+}
+body #burger + .burger-label span:first-child {
+  top: 3px;
+}
+body #burger + .burger-label span:last-child {
+  top: 16px;
+}
+body .burger-label:hover {
+  cursor: pointer;
+}
+body #burger:checked + .burger-label span {
+  top: 50%;
+
+  opacity: 0;
+}
+body #burger:checked + .burger-label span:first-child {
+  transform: rotate(405deg);
+
+  opacity: 1;
+	background: $text-color;
+}
+body #burger:checked + .burger-label span:last-child {
+  transform: rotate(-405deg);
+
+  opacity: 1;
+	background: $text-color;
+}
+body #burger ~ .menu {
+  position: fixed;
+  z-index: 3;
+  bottom: 0;
+  left: 0;
+
+	display: flex;
+  overflow: hidden;
+
+  width: 0%;
+  height: 100%;
+
+  transition: all .25s ease-in-out;
+	transition-delay: .1s;
+
+  background: transparent;
+
+	justify-content: space-around;
+	align-items: center;
+
+	@media screen and (max-width: 500px)  {
+		width: 100%;
+		height: 100%;
+
+		transform: scale(0);
+	}
+}
+body #burger ~ .menu > ul {
+	display: flex;
+	flex-direction: column;
+
+	padding: 0px !important;
+
+	list-style: none;
+
+	text-align: center;
+
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+	@media screen and (max-width: 500px) {
+		max-width: 35vw;
+	}
+}
+body #burger ~ .menu > ul > li {
+	margin: 30px;
+
+  transition: .25s;
+  transition-delay: 0s;
+
+  opacity: 0;
+}
+body #burger ~ .menu > ul > li > a {
+  display: block;
+
+  text-decoration: none;
+  text-transform: uppercase;
+
+  font-family: 'Hero', sans-serif;
+  font-weight: 700;
+}
+body #burger:checked ~ .menu {
+	width: 25vw;
+
+  transition-delay: .1s;
+
+	opacity: 1;
+	color: $text-color;
+	background: $tprimary;
+
+	@media screen and (max-width: 500px)  {
+  	width: 100%;
+		height: 100%;
+
+		transform: scale(1);
+
+		background: $primary;
+	}
+}
+
+body #burger:checked ~ .menu > ul > li {
+  transition-delay: .25s;
+
+  opacity: 1;
+	color: $text-color;
+}
+body #burger:checked ~ .menu > ul > li > a {
+  transition-delay: .25s;
+
+  opacity: 1;
+	color: $text-color;
+}
+
+#burger {
+	position: fixed;
+	z-index: -1;
+	bottom: 0;
+	left: 0;
+
+	display: none;
+}

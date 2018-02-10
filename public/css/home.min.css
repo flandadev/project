@@ -1,0 +1,215 @@
+@-moz-keyframes neon6 {
+  from {
+    opacity: 1;
+    color: #fff;
+    text-shadow: 0 0 10px #8dd1b9, 0 0 20px #8dd1b9, 0 0 30px #8dd1b9, 0 0 40px #70c6a8, 0 0 70px #70c6a8, 0 0 80px #70c6a8, 0 0 100px #70c6a8, 0 0 150px #70c6a8;
+  }
+  to {
+    opacity: 0;
+    color: #fff;
+    text-shadow: none;
+  }
+}
+@-webkit-keyframes neon6 {
+  from {
+    opacity: 1;
+    color: #fff;
+    text-shadow: 0 0 10px #8dd1b9, 0 0 20px #8dd1b9, 0 0 30px #8dd1b9, 0 0 40px #70c6a8, 0 0 70px #70c6a8, 0 0 80px #70c6a8, 0 0 100px #70c6a8, 0 0 150px #70c6a8;
+  }
+  to {
+    opacity: 0;
+    color: #fff;
+    text-shadow: none;
+  }
+}
+@-o-keyframes neon6 {
+  from {
+    opacity: 1;
+    color: #fff;
+    text-shadow: 0 0 10px #8dd1b9, 0 0 20px #8dd1b9, 0 0 30px #8dd1b9, 0 0 40px #70c6a8, 0 0 70px #70c6a8, 0 0 80px #70c6a8, 0 0 100px #70c6a8, 0 0 150px #70c6a8;
+  }
+  to {
+    opacity: 0;
+    color: #fff;
+    text-shadow: none;
+  }
+}
+@keyframes neon6 {
+  from {
+    opacity: 1;
+    color: #fff;
+    text-shadow: 0 0 10px #8dd1b9, 0 0 20px #8dd1b9, 0 0 30px #8dd1b9, 0 0 40px #70c6a8, 0 0 70px #70c6a8, 0 0 80px #70c6a8, 0 0 100px #70c6a8, 0 0 150px #70c6a8;
+  }
+  to {
+    opacity: 0;
+    color: #fff;
+    text-shadow: none;
+  }
+}
+@-moz-keyframes shadow {
+  from {
+    color: #3957b0;
+  }
+  25% {
+    color: #18e01a;
+  }
+  50% {
+    color: #27f9b9;
+  }
+  75% {
+    color: #a3df44;
+  }
+  to {
+    color: #dda64a;
+  }
+}
+@-webkit-keyframes shadow {
+  from {
+    color: #3957b0;
+  }
+  25% {
+    color: #18e01a;
+  }
+  50% {
+    color: #27f9b9;
+  }
+  75% {
+    color: #a3df44;
+  }
+  to {
+    color: #dda64a;
+  }
+}
+@-o-keyframes shadow {
+  from {
+    color: #3957b0;
+  }
+  25% {
+    color: #18e01a;
+  }
+  50% {
+    color: #27f9b9;
+  }
+  75% {
+    color: #a3df44;
+  }
+  to {
+    color: #dda64a;
+  }
+}
+@keyframes shadow {
+  from {
+    color: #3957b0;
+  }
+  25% {
+    color: #18e01a;
+  }
+  50% {
+    color: #27f9b9;
+  }
+  75% {
+    color: #a3df44;
+  }
+  to {
+    color: #dda64a;
+  }
+}
+.pattern {
+  background: url("/assets/pattern.svg") repeat center;
+  background-attachment: fixed;
+  background-color: #f100aa;
+  background-size: 200px;
+}
+.flanda-style {
+  font-family: 'Helvetica', sans-serif;
+  font-weight: bolder;
+  font-style: italic;
+  color: #fff;
+  text-shadow: -4.5px 3.5px 0px #70c6a8;
+}
+.navbar.flanda {
+  background: transparent;
+  color: #fff;
+}
+.navbar.flanda a.navbar--brand,
+.navbar.flanda .navbar--brand {
+  float: left;
+  font-size: 1.5em;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  font-style: italic;
+  text-shadow: -1.5px 1.5px 0px #00e28f;
+  transition: 0.15s all ease-in-out;
+}
+.navbar.flanda a.navbar--brand:hover,
+.navbar.flanda .navbar--brand:hover {
+  transform: scale(0.9);
+}
+.cls-1 {
+  fill: #70c6a8;
+}
+.cls-2 {
+  fill: #f1f2f2;
+}
+.cls-3 {
+  fill: #fff;
+}
+section {
+  color: #fff;
+}
+section .logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80vw;
+  max-width: 450px;
+  transition: opacity 0.25s ease-in-out;
+  transform: translate(-50%, -50%);
+}
+section .sub-title {
+  position: absolute;
+  top: 61%;
+  left: 50%;
+  color: #fff;
+  width: 80vw;
+  max-width: 300px;
+  padding: 3px;
+  font-size: 1.2em;
+  transform: translate(-50%, -50%);
+  animation: neon6 1s infinite alternate cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  text-align: center;
+  text-transform: uppercase;
+  border-color: ;
+  color: !important;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: normal;
+}
+@media screen and (max-height: 830px) {
+  section .sub-title {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-height: 630px) {
+  section .sub-title {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-height: 450px) and (min-width: 600px) {
+  section .sub-title {
+    margin-top: 60px;
+  }
+}
+.fp-title {
+  border-radius: 5px;
+  background: #fff;
+  padding: 15px;
+}
+.get-tickets {
+  position: relative;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/*# sourceMappingURL=home.min.css.map */

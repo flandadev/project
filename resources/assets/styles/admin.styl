@@ -1,0 +1,98 @@
+@import 'extra/variables';
+@import 'extra/dom';
+@import 'extra/form';
+@import 'extra/flanda';
+@import 'extra/menu';
+@import 'extra/containers';
+
+$navbar = #3B4153;
+$navLight = lighten($navbar, 5%);
+
+.admin-form {
+    margin: 0 auto;
+}
+
+.inline-items * {
+    display inline-block
+    margin 0 2.5px
+}
+
+td {
+  vertical-align middle !important
+}
+
+.stellarnav>ul>li>a {
+	padding: 25px;
+}
+
+.stellarnav .call-btn-mobile, .stellarnav .close-menu, .stellarnav .location-btn-mobile, .stellarnav .menu-toggle {
+	color: #fff;
+}
+
+nav {
+	background: $navbar !important;
+
+	ul {
+		background: $navbar !important;
+		text-align: left !important;
+
+		.username {
+			float: right !important;
+		}
+	}
+
+	ul li a {
+		color: white !important
+	}
+}
+
+ul li ul li {
+	background: $navLight;
+
+	&:hover {
+		background: $navbar;
+	}
+
+	a {
+		color: #fff;
+	}
+}
+
+
+.magic-alert {
+	position: fixed;
+
+	bottom: 20px;
+	left: 20px;
+
+	max-width: 25vw;
+}
+
+.status {
+  position relative;
+  margin: 3 auto;
+  width: 10px;
+  height: 10px;
+
+  -webkit-border-radius: 100%
+  -moz-border-radius: 100%
+  border-radius: 100%
+
+  border: none;
+  display: inline-block
+
+  background-color: whitesmoke;
+
+  &.on {
+    background-color: #24ff92
+  }
+
+  &.off {
+    background-color: #ff4374
+  }
+}
+
+#logged {
+  display: inline-block;
+  padding-left: 10px;
+}

@@ -1,0 +1,55 @@
+
+form {
+	width: 80vw;
+  	max-width: 450px;
+	margin: 0 auto;
+
+	text-align: center;
+
+	* {
+		display: block;
+	}
+
+	input,
+	button {
+		display: block;
+
+		outline: none;
+
+		-webkit-appearance: none;
+
+		&:not([type="submit"]) {
+			padding: 10px;
+
+			color: $text-color;
+			border: none;
+			border-bottom: 1.7px solid $text-color;
+			background: none;
+
+			font-size: 1em;
+
+			&::placeholder {
+				transition: opacity .25s ease-in-out;
+
+				opacity: .5;
+				color: $text-color;
+			}
+
+			&:hover,
+			&:focus {
+				&::placeholder {
+					opacity: .85;
+				}
+			}
+		}
+	}
+}
+
+
+.form-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	transform: translate(-50%, -50%);
+}

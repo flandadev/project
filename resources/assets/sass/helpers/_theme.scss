@@ -1,0 +1,7 @@
+$primary: darken(#28282F, 15%);
+$text-color: #eee;
+$tprimary: transparentize($primary, .25);
+$theme: #70c6a8;
+$light: lighten($theme, 20%);
+$dark: darken($theme, 7%);
+$shock: #F100AA;

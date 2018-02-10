@@ -1,0 +1,124 @@
+@import 'mixins';
+@import '../../../bower_components/font-awesome/scss/font-awesome.scss';
+@import 'theme';
+
+html,
+html * {
+  box-sizing: border-box;
+}
+
+body *:not(.forest) {
+	z-index: 2;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  text-align: inherit;
+
+  color: $text-color;
+  background: trasparent;
+
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 18px;
+}
+
+html,
+body {
+	background: url('assets/pattern.svg') repeat center;
+	background-attachment: fixed;
+	background-size: 200px;
+}
+
+.container-center {
+  display: flex;
+
+  width: 100vw;
+  height: 100vh;
+
+  justify-content: center;
+  align-items: center;
+}
+
+section,
+.is-section {
+	position: relative;
+
+	min-width: 100vw;
+	min-height: 100vh;
+
+	background: transparent;
+
+  &.no-full {
+    height: auto;
+  }
+}
+
+
+.forest {
+	position: fixed;
+	z-index: 1;
+
+	width: 100vw;
+	height: 100vh;
+
+	background: url('assets/forest.jpg') no-repeat center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+
+.bottom-right {
+  z-index: 999999 !important;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  width: 100vw;
+	margin: 0;
+  padding: 15px;
+
+  list-style: none;
+
+  text-align: right;
+
+	@media screen and (max-width: 500px) {
+		text-align: center;
+	}
+
+	li {
+		display: inline-block;
+
+    margin: 0px 10px;
+
+		transition: opacity .25s ease-in-out;
+
+		&:hover {
+			opacity: .7;
+		}
+	}
+}
+
+.animated {
+	transition: all .25s ease-in-out !important;
+	transition-delay: 0s !important;
+
+	&.active {
+		opacity: .4 !important;
+	}
+	&:hover:not(.active) {
+		opacity: .7 !important;
+	}
+}
+
+
+.no-style {
+	list-style: none;
+
+	text-decoration: none;
+
+	color: $text-color;
+	background: inherit;
+}

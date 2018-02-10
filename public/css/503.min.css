@@ -1,0 +1,57 @@
+body {
+  text-align: center;
+  padding: 150px;
+  font: 20px Helvetica, sans-serif;
+  color: #292944;
+}
+h1 {
+  font-size: 50px;
+}
+article {
+  display: block;
+  text-align: left;
+  width: 650px;
+  margin: 0 auto;
+}
+a {
+  color: #ff4374;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out;
+}
+a:hover {
+  color: #d10037;
+  text-decoration: none;
+}
+*::selection {
+  color: #f5f5f5;
+  background: #ff4374;
+}
+.sign {
+  font-style: italic;
+  opacity: 0.5;
+}
+.social {
+  color: #292944;
+  margin: 0 auto;
+  background: transparent;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  left: 0;
+  width: 100vw;
+  transform: scale(1);
+}
+.social .fa {
+  display: inline-block;
+  margin: 10px;
+  color: #292944;
+  cursor: pointer;
+  transition: transform 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+.social .fa:hover {
+  transform: scale(0.95);
+  color: #8282b4;
+}
+
+/*# sourceMappingURL=503.min.css.map */

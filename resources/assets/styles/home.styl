@@ -1,0 +1,78 @@
+@import 'extra/variables';
+@import 'extra/animations';
+@import "extra/flanda"
+
+.cls-1 {
+        fill: colors.theme;
+}
+.cls-2 {
+        fill: #f1f2f2;
+}
+.cls-3 {
+        fill: #fff;
+}
+
+section {
+    color: #fff;
+
+    .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        width: 80vw;
+        max-width: 450px;
+
+        transition: opacity .25s ease-in-out;
+        transform: translate(-50%, -50%);
+    }
+
+    .sub-title {
+        position: absolute;
+        top: 61%;
+        left: 50%;
+        color: #fff;
+
+        width: 80vw;
+        max-width: 300px;
+        padding: 3px;
+        font-size: 1.2em;
+
+        transform: translate(-50%, -50%);
+        animation: neon6 1s infinite alternate cubic-bezier(0.95, 0.05, 0.795, 0.035);
+        text-align: center;
+        text-transform: uppercase;
+
+        border-color: colors.smoke;
+        color: colors.smoke !important;
+
+        font-family: 'Helvetica', sans-serif;
+        font-weight: normal;
+
+        @media screen and (max-height: 830px) {
+            margin-top: 20px;
+        }
+
+        @media screen and (max-height: 630px) {
+            margin-top: 40px;
+        }
+
+        @media screen and (max-height: 450px) and (min-width: 600px) {
+            margin-top: 60px;
+        }
+    }
+}
+
+.fp-title {
+    border-radius 5px
+    background: white;
+    padding 15px
+}
+
+.get-tickets {
+    position: relative
+    display block
+    margin 20px auto
+    text-align center
+}
+

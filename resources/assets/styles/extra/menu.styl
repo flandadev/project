@@ -1,0 +1,99 @@
+// DOTS
+.dots-menu {
+    position: fixed
+    right: 20px
+
+    top: 50%
+    transform: translateY(-50%)
+
+    margin: 0
+    padding: 0
+    background: none
+    display: flex
+    flex-direction: column
+
+    height: auto
+    width: auto
+
+    z-index: 10
+
+    .dot {
+        cursor: pointer
+        border-radius: 100%
+        transition: all .2s ease-in-out
+        width: 15px
+        height: 15px
+        margin: 5px 0
+        cursor: pointer
+    }
+
+
+
+    &.dark .dot {
+        border: 1px solid $dark
+
+        &:hover,
+        &.active {
+            background: $dark
+        }
+    }
+}
+
+// SOCIAL
+.social {
+    padding: 10px
+    bottom: 10px
+    right: 10px
+    margin: 0
+    list-style-type: none
+    width: auto
+    height: auto
+    position: absolute
+
+    &.fixed {
+        position: fixed
+    }
+
+
+    li {
+        padding: 5px
+        display: inline-block
+
+        color: $dark
+    }
+}
+
+// MENU
+.menu {
+    min-height: 57px
+    z-index: 999
+    width: 100%
+    position: absolute
+
+    bottom: 0
+    left: 0
+
+    background: transparent
+
+    display: flex
+    justify-content: center
+    align-items: center
+
+    &.fixed-top {
+        position: fixed
+        top: 0
+        bottom: inherit
+    }
+
+    .menu-items {
+        width: auto
+        height: auto
+    }
+
+    .menu--item {
+        color: inherit
+        text-transform: uppercase
+        padding: 15px
+        display: inline-block
+    }
+}
